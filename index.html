@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/0402699a96.js"></script>
+
+  <title>To Do List App</title>
+
+  </head>
+
+  <body>
+    <div class="container mt-4">
+      <h1 class="display-4 text-center">
+        <i class="far fa-check-square text-primary"></i><span class="text-primary"> To Do</span> List</h1>
+      <form id="list-form">
+        <div class="form-group">
+          <label for="task">Task</label>
+          <input type="text" id="item" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="assigned">Assigned</label>
+          <input type="text" id="assigned" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="deadline">Deadline</label>
+          <input type="text" id="deadline" class="form-control">
+        </div>
+
+        <input type="submit" value="Add Task" class="btn btn-primary btn-block">
+        </form>
+
+        <table class="table table-striped mt-5">
+          <thead>
+            <tr>
+            <th>Task</th>
+            <th>Assigned</th>
+            <th>Deadline</th>
+            <th></th>
+            </tr>
+          </thead>
+
+          <tbody id="task-list">
+
+          </tbody>
+
+        </table>
+
+
+    </div>
+
+   <script src="app.js"></script>
+
+
+
+  </body>
+
+  </html>
